@@ -12,11 +12,12 @@
     />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
       <nav class="nav collapsible">
-        <a href="/" class="nav__brand"
+        <a aria-label="Nokify" href="/" class="nav__brand"
           ><img src="./Images/logo.svg" alt=""
         /></a>
         <svg class="icon icon--white nav__toggler">
@@ -35,13 +36,15 @@
       <section class="block block--dark block--skewed-left hero">
         <div class="container grid grid--1x2">
           <header class="block__header hero__content">
-            <h1 class="block__heading">Cloud Hosting for Pros</h1>
+            <h1 data-aos="fade-right" class="block__heading">
+              Cloud Hosting for Pros
+            </h1>
             <p class="hero__tagline">
               Deploy your websites in less than 60 seconds
             </p>
             <a href="" class="btn btn--accent btn--streched">Get Started</a>
           </header>
-          <picture>
+          <picture data-aos="zoom-in">
             <source
               type="image/webp"
               srcset="./Images/banner.webp 1x, ./Images/banner@2x.webp 2x"
@@ -54,7 +57,7 @@
           </picture>
         </div>
       </section>
-      <section class="block container block-domain">
+      <section data-aos="fade-up" class="block container block-domain">
         <header class="block__header">
           <h2>Starting at $9 per month</h2>
           <p>
@@ -85,7 +88,7 @@
         </ul>
       </section>
 
-      <section class="block container block-plans">
+      <section data-aos="fade-up" class="block container block-plans">
         <div class="grid grid--1x3">
           <div class="plan">
             <div class="card card--secondary">
@@ -158,7 +161,7 @@
             dolorem.
           </p>
         </header>
-        <article class="grid grid--1x2 feature">
+        <article data-aos="fade-right" class="grid grid--1x2 feature">
           <div class="feature__content">
             <span class="icon-container">
               <svg class="icon icon--primary">
@@ -173,7 +176,7 @@
             </p>
             <a href="#" class="link-arrow">Learn more</a>
           </div>
-          <picture>
+          <picture data-aos="zoom-in-left">
             <source
               type="image/webp"
               srcset="./Images/easy.webp 1x, ./Images/easy@2x.webp 2x"
@@ -271,7 +274,81 @@
           </picture>
         </article>
       </section>
-      <section class="block">
+      <section class="block block--dark block--skewed-right block-showcase">
+        <div class="container">
+          <div class="block__header">
+            <h2>User-Friendly Control Panel</h2>
+          </div>
+          <article class="grid grid--1x2">
+            <picture data-aos="fade-right" class="block-showcase__picture">
+              <source
+                type="image/webp"
+                srcset="./Images/ipad.webp 1x, ./Images/ipad@2x.webp 2x"
+              />
+              <source
+                type="image/png"
+                srcset="./Images/ipad.png 1x, ./Images/ipad@2x.png 2x"
+              />
+              <img src="./Images/ipad@2x.png" alt="" />
+            </picture>
+            <ul class="list" data-aos="fade-up">
+              <li>
+                <div class="media">
+                  <div class="media__image">
+                    <svg class="icon icon--primary">
+                      <use xlink:href="/Images/sprite.svg#snap"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title">Easy Start & Managed Updates</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Et nesciunt ullam provident facilis obcaecati facere! Ab
+                      corrupti rerum fuga repellat?
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="media">
+                  <div class="media__image">
+                    <svg class="icon icon--primary">
+                      <use xlink:href="/Images/sprite.svg#growth"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title">Staging, GIT & WP_CLI</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Et nesciunt ullam provident facilis obcaecati facere! Ab
+                      corrupti rerum fuga repellat?
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="media">
+                  <div class="media__image">
+                    <svg class="icon icon--primary">
+                      <use xlink:href="/Images/sprite.svg#wordpress"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title">Dynamic Caching & More</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Et nesciunt ullam provident facilis obcaecati facere! Ab
+                      corrupti rerum fuga repellat?
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="block" data-aos="zoom-in">
         <header class="block__header">
           <h2>What our Customers are saying</h2>
           <p>
@@ -397,5 +474,9 @@
     </footer>
 
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
