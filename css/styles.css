@@ -982,3 +982,8 @@ a {
     font-size: 1.6rem;
   }
 }
+
+/* Sign-up callout */
+.callout-signup {
+  transform: translateY(5rem);
+}
