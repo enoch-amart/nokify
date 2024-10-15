@@ -1,0 +1,15 @@
+{
+  "name": "nokify",
+  "version": "1.0.0",
+  "description": "A web hosting website - Code With Mosh HTML &amp; CSS  course project",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
